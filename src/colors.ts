@@ -10,9 +10,9 @@ function getEffects(effectList:string[]) {
 }
 
 type colorOptions = {
-    font?:string;
+    font?: "black"|"red"|"green"|"yellow"|"blue"|"magenta"|"cyan"|"white";
     effects?:string[];
-    background?:string   
+    background?: "black"|"red"|"green"|"yellow"|"blue"|"magenta"|"cyan"|"white";  
 }
 
 export function color(text:string, options?:colorOptions) {

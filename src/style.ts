@@ -14,11 +14,11 @@ export function style(text: string, options: optionsType) {
 }
 
 type optionsType = {
-    font?: string;
+    font?: "black"|"red"|"green"|"yellow"|"blue"|"magenta"|"cyan"|"white";
     effects?: string[];
     bold?: boolean;
     italic?: boolean;
     mono?: boolean;
     link?:string;
-    background?:string
+    background?:"black"|"red"|"green"|"yellow"|"blue"|"magenta"|"cyan"|"white";
 }
