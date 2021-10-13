@@ -5,13 +5,13 @@ function addColor(text:string, color:string, isBackground:boolean= false):string
     }
     return text + fontColors[color];
 }
-function getEffects(effectList:string[]) {
+function getEffects(effectList:["bright"|"dim"|"italic"|"underscore"|"blink"]) {
     return effectList.map(effect => effects[effect]).join('');
 }
 
 type colorOptions = {
     font?: "black"|"red"|"green"|"yellow"|"blue"|"magenta"|"cyan"|"white";
-    effects?:string[];
+    effects?: ["bright"|"dim"|"italic"|"underscore"|"blink"];
     background?: "black"|"red"|"green"|"yellow"|"blue"|"magenta"|"cyan"|"white";  
 }
 

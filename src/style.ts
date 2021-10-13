@@ -15,7 +15,7 @@ export function style(text: string, options: optionsType) {
 
 type optionsType = {
     font?: "black"|"red"|"green"|"yellow"|"blue"|"magenta"|"cyan"|"white";
-    effects?: string[];
+    effects?: ["bright"|"dim"|"italic"|"underscore"|"blink"];
     bold?: boolean;
     italic?: boolean;
     mono?: boolean;
